@@ -179,63 +179,17 @@ nav{
     padding-right: 5%;
 }
 
-.nav-right input{
-    background-color: #d9d9d960;
-    width: 10%;
-    height: 60%;
-    border-radius: 50px;
-    border: none;
-    backdrop-filter: blur(15px);
-    color: var(--text-white-color);
-    font-family: 'Poppins Regular';
-    transition: transform 0.3s linear, width 0.3s linear;
-    position: relative;
-}
-
-#search-icon{
-    position: absolute;
-    left: 86%;
-    color: #fff;
-    font-size: 1.5rem;
-    opacity: 1;
-}
-
-.nav-right input:hover + #search-icon {
-    display: none;
-}
-
-.nav-right input:hover{
-    backdrop-filter: blur(5px);
-    transform: scale(0.98);
-    width: 35%;
-    height: 60%;
-    border-radius: 50px;
-}
-
-.nav-right input:hover::placeholder{
-    opacity: 1;
-    padding-left: 10%;
-    font-family: 'Poppins Regular';
-}
-
-.nav-right input::placeholder{
-    color: var(--text-white-color);
-    opacity: 0;
-}
-
-.nav-right input:focus{
-    border: 1px solid white;
-    outline: none;
-    font-family: 'Poppins Regular';
-    padding-left: 3%;
-}
-
 .nav-right button{
     padding: 15px;
     background-color: transparent;
     border: none;
     color: var(--text-white-color);
     font-size: 1.5rem;
+    transition: transform 0.3s linear;
+}
+
+.nav-right button:hover{
+    transform: scale(1.1);
 }
 
 /*Here goes header-footer*/

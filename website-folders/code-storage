@@ -1,0 +1,59 @@
+Here will be transfered code that has been used but will be deleted for now and will be used later
+
+<!--
+<input type="text" placeholder="Search...">
+                    <i id="search-icon" class="ri-search-line"></i>
+-->
+
+This is CSS code for the commented code 
+
+.nav-right input{
+    background-color: #d9d9d960;
+    width: 10%;
+    height: 60%;
+    border-radius: 50px;
+    border: none;
+    backdrop-filter: blur(15px);
+    color: var(--text-white-color);
+    font-family: 'Poppins Regular';
+    transition: transform 0.3s linear, width 0.3s linear;
+    position: relative;
+}
+
+#search-icon{
+    position: absolute;
+    left: 86%;
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+
+.nav-right input:hover + #search-icon {
+    display: none;
+}
+
+.nav-right input:hover{
+    backdrop-filter: blur(5px);
+    transform: scale(0.98);
+    width: 35%;
+    height: 60%;
+    border-radius: 50px;
+}
+
+.nav-right input:hover::placeholder{
+    opacity: 1;
+    padding-left: 10%;
+    font-family: 'Poppins Regular';
+}
+
+.nav-right input::placeholder{
+    color: var(--text-white-color);
+    opacity: 0;
+}
+
+.nav-right input:focus{
+    border: 1px solid white;
+    outline: none;
+    font-family: 'Poppins Regular';
+    padding-left: 3%;
+}

@@ -1,0 +1,59 @@
+/*Here goes css code of index.html file*/
+
+/*Here are poppins fonts*/
+
+/* Poppins Light*/
+@font-face{
+    font-family: 'Poppins Light';
+    src: url(../font-files/Poppins_fonts/Poppins-Light.ttf) format(truetype);
+}
+
+/* Poppins Regular*/
+@font-face{
+    font-family: 'Poppins Regular';
+    src: url(../font-files/Poppins_fonts/Poppins-Regular.ttf) format(truetype);
+}
+
+/* Poppins Medium*/
+@font-face{
+    font-family: 'Poppins Medium';
+    src: url(../font-files/Poppins_fonts/Poppins-Medium.ttf) format(truetype);
+}
+
+/* Poppins SemiBold*/
+@font-face{
+    font-family: 'Poppins SemiBold';
+    src: url(../font-files/Poppins_fonts/Poppins-SemiBold.ttf) format(truetype);
+}
+
+/* Poppins Bold*/
+@font-face{
+    font-family: 'Poppins Bold';
+    src: url(../font-files/Poppins_fonts/Poppins-Bold.ttf) format(truetype);
+}
+
+/*CSS variables*/
+
+:root{
+
+    /*font sizes*/
+    --font-extra-small: 0.7rem;
+    --font-small: 1rem;
+    --font-mediun: 2rem;
+    --font-large: 3rem;
+    --font-extra-large: 4rem;
+
+    /*colors*/
+    --text-black-color: #000;
+    --text-white-color: #fff;
+
+    /*border-radius*/
+    --rounded-border-radius: 50%;
+    --semi-rounded-border-radius: 25px;
+    --quarter-rounded-border-radius: 15px;
+
+}
+
+
+
+

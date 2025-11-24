@@ -1,0 +1,1 @@
+//JS code dedicated for index.html file

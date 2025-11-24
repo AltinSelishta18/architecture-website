@@ -288,7 +288,38 @@ nav{
 .header-footer-right{
     width: 50%;
     height: 100%;
-    background-color: cadetblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 10%;
+    padding-bottom: 4%;
+}
+
+.header-footer-right a{
+    background-color: #d9d9d960;
+    width: 50%;
+    border-radius: 50px;
+    height: 26%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins Regular';
+    backdrop-filter: blur(10px);
+    color: #fff;
+    transition: backdrop-filter 0.3s linear, transform 0.3s ease-in;
+}
+
+.header-footer-right a:hover{
+    backdrop-filter: blur(1px);
+    transform: scale(0.95);
+}
+
+.header-footer-right a i{
+    transition: transform 0.2s linear;
+}
+
+.header-footer-right a:hover i{
+    transform: rotate(330deg);
 }
 
 

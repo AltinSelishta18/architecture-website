@@ -7,6 +7,8 @@ Here will be transfered code that has been used but will be deleted for now and 
 
 This is CSS code for the commented code 
 
+
+
 .nav-right input{
     background-color: #d9d9d960;
     width: 10%;

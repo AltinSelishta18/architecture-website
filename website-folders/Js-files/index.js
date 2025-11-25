@@ -32,6 +32,8 @@ const SearchElements = [
     {Name: "ABOUT", Url:"../html-files/about.html"},
     {Name: "PROJECTS", Url:"../html-files/projects.html"},
     {Name: "CONTACT", Url:"../html-files/contact.html"},
+    {Name: "SERVICES", Url:"../html-files/Services.html"},
+    {Name: "CONSULTATIONS", Url:"../html-files/Consultations.html"},
 ]
 
 const SearchInput = document.querySelector("#SearchInput");

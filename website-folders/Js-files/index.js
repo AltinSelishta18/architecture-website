@@ -11,7 +11,6 @@ setInterval(() =>{
 }, 3000);
 
 
-// Searching pages by search input function
 
 const SmallMenu = document.querySelector("#SmallMenu");
 const CloseBtn = document.querySelector("#CloseBtn");
@@ -26,3 +25,30 @@ CloseBtn.addEventListener("click", function(){
     SmallMenu.classList.remove("add")
 })
 
+//Searching function made by input search will be created here
+
+const SearchElements = [
+    {Name: "HOME", Url:"../html-files/index.html"},
+    {Name: "ABOUT", Url:"../html-files/about.html"},
+    {Name: "PROJECTS", Url:"../html-files/projects.html"},
+    {Name: "CONTACT", Url:"../html-files/contact.html"},
+]
+
+const SearchInput = document.querySelector("#SearchInput");
+const itemSearch = document.querySelector("#itemSearch");
+
+SearchInput.addEventListener("input", function(){
+    const query = SearchInput.value.toLowerCase();
+
+    const filtered = SearchElements.filter(item => item.Name.toLowerCase().includes(query));
+    const filteredElements = filtered.map(item => `<a href="${item.Url}">${item.Name}</a>`);
+
+    itemSearch.innerHTML = filteredElements;
+
+    if(SearchInput.value.trim() === ""){
+        itemSearch.style.display = "none";
+    }
+    else{
+        itemSearch.style.display = "block";
+    }
+})

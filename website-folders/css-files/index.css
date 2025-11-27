@@ -177,6 +177,7 @@ header::before{
     background-color: #ffffff60;
     padding: 7px 7px;
     padding-left: 3%;
+    border-radius: 25px;
 }
 
 /*This part of code was added after being deleted for making uptades on design*/
@@ -449,6 +450,48 @@ nav{
 
 .header-footer-right a:hover i{
     transform: rotate(330deg);
+}
+
+/*Responsive design breakpoint 600px*/
+
+@media(max-width:600px){
+    .nav-left-items{
+        display: none;
+    }
+
+    .nav-left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .title{
+        padding-left: 10%;
+    }
+    .header-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-footer-left{
+        width: 100%;
+    }
+    
+    .header-footer-sllogan{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        width: 100%;
+    }
+    .header-footer-right{
+        width: 100%;
+    }
+
+    *{
+        border: 1px solid #b1c40c;
+    }
+
 }
 
 

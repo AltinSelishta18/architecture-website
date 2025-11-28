@@ -481,15 +481,49 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: red;
         width: 100%;
+        text-align: center;
+        position: relative;
+        padding-bottom: 2%;
     }
+
+    .header-footer-sllogan span{
+        font-size: clamp(2rem, 3vw, 3rem);
+    }
+    
+    .header-footer-sllogan span::before{
+        content: '';
+        position: absolute;
+        left: 35%;
+    }
+
+    .header-footer-text p{
+        text-align: justify;
+    }
+
     .header-footer-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+    }
+
+    .header-footer-right a{
+        height: 35%;
+        width: 45%;
+    }
+
+    .small-menu.add{
+        height: 100%;
         width: 100%;
     }
 
-    *{
-        border: 1px solid #b1c40c;
+    .small-menu{
+        width: 100%;
+        height: 0%;
+        position: absolute;
+        top: 0;
     }
 
 }

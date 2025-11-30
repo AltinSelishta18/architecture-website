@@ -607,3 +607,25 @@ nav{
     }  
 }
 
+@media(min-width:921px) and (max-width:1440px){
+      .header-footer-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .header-footer-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 10%;
+      }
+
+      .header-footer-right a{
+        width: clamp(60%, 65%, 70%);
+        height: clamp(20%, 30%, 55%);
+        padding: 10% 5% 10%;
+      }
+
+}
+

@@ -11,7 +11,6 @@ setInterval(() =>{
 }, 3000);
 
 
-
 const SmallMenu = document.querySelector("#SmallMenu");
 const CloseBtn = document.querySelector("#CloseBtn");
 const OpenMenu = document.querySelector("#OpenMenu");

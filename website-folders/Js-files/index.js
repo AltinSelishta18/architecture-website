@@ -50,6 +50,7 @@ SearchInput.addEventListener("input", function(){
     if(SearchInput.value.trim() === ""){
         itemSearch.style.display = "none";
     }
+
     else{
         itemSearch.style.display = "block";
     }

@@ -73,6 +73,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 100vh;
     max-width: 1400px;
@@ -94,6 +95,7 @@ header::before{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     z-index: 1;
     filter: brightness(80%);
     display: flex;
@@ -616,15 +618,14 @@ nav{
       }
       .header-footer-right{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10% 10%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
       }
 
       .header-footer-right a{
-        width: clamp(60%, 65%, 70%);
+        width: clamp(35%, 45%, 50%);
         height: clamp(20%, 30%, 55%);
-        padding: 10% 5% 10%;
       }
 
 }

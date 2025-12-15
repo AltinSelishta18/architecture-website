@@ -2,13 +2,17 @@
 
 // Header footer text changing animation
 
-const texts = ["Crafting Modern Architecture.", "Designing Innovative Spaces", "Shaping Futuristic Environments"]
+const texts = ["Crafting Modern Architecture.", "Designing Innovative Spaces",]
 let index = 0;
 
-setInterval(() =>{
-    index = (index + 1) % texts.length;
-    document.querySelector("#text").innerText = texts[index];
-}, 3000);
+
+    setInterval(() =>{
+        index = (index + 1) % texts.length;
+        document.querySelector("#text").innerText = texts[index];
+    }, 3000);
+
+
+
 
 
 const SmallMenu = document.querySelector("#SmallMenu");

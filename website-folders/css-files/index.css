@@ -454,31 +454,10 @@ nav{
     transform: rotate(330deg);
 }
 
-.slider{
-    width: 1000px; /* shfaq 3 dritare */
-    overflow: hidden;
-    margin: auto;
-}
-
-.track{
-    display: flex;
-    gap: 15px;
-    transition: transform 0.5s ease;
-}
-
-
-.box{
-    min-width: 400px; /* gjerësia e një dritare */
-    height: 600px;
-}
-
-
-.box img{
+.Achievements{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    min-height: 100vh;
 }
-
 /*Responsive design breakpoint 370-600px*/
 
 @media(min-width:370px) and (max-width:600px){

@@ -58,3 +58,5 @@ SearchInput.addEventListener("input", function(){
         itemSearch.style.display = "block";
     }
 })
+
+

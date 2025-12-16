@@ -725,7 +725,45 @@ nav{
     .header-footer-right a{
         width: 35%;
         height: 48%;
-    }  
+    }
+
+    .Achievements{
+        width: 90%;
+        margin: auto;
+    }
+
+    .achievements-header h2{
+        font-size: 2.4rem;
+    }
+
+    .achievements-cards{
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000049;
+        transition: height 0.3s linear;
+    }
+
+    #third-box{
+        grid-column: 1 / -1;
+        height: 100%;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .achievements-cards p{
+        opacity: 1;
+    }
 }
 
 @media(min-width:921px) and (max-width:1440px){
@@ -752,6 +790,10 @@ nav{
     .header-footer-right a{
         width: clamp(50%, 55%, 55%);
         height: clamp(20%, 25%, 55%);
+    }
+
+    .box{
+        height: 90%;
     }
 
 }

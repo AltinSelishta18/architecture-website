@@ -535,6 +535,32 @@ nav{
     font-size: 1.5rem;
 }
 
+.designs-collection{
+    background-color: red;
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+}
+
+.design-collection-left{
+    width: 50%;
+    min-height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.design-collection-img{
+    width: 50%;
+    min-height: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Responsive design breakpoint 370-600px*/
 
 @media(min-width:370px) and (max-width:600px){

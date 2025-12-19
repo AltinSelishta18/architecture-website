@@ -566,6 +566,10 @@ nav{
     margin: 0 auto;
 }
 
+.design-collection-info span{
+    color: rgb(134, 110, 78);
+}
+
 .design-collection-info p{
     font-family: 'Poppins Regular';
     font-size: 0.9rem;
@@ -579,6 +583,7 @@ nav{
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: transform 0.3s linear;
 }
 
 .design-collection-img img{
@@ -606,6 +611,15 @@ nav{
     100%{
         transform: translateY(400px);
     }
+}
+
+.design-collection-img:hover{
+    transform: scale(1.01);
+}
+
+.design-collection-img a:hover{
+    background-color: rgb(134, 110, 78);
+    transition: 0.3s linear;
 }
 
 /*Responsive design breakpoint 370-600px*/
@@ -726,7 +740,60 @@ nav{
         transition: height 0.3s linear;
     }
 
+    .designs-collection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        min-height: 100vh;
+        margin-top: 5%;
+        gap: 35px;
+    }
+
+    .design-collection-img{
+        width: 100%;
+    }
+
+    .design-collection-left{
+        width: 70%;
+    }
+
+    .design-collection-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .design-collection-info h2{
+        font-size: 1.7rem;
+        width: 100%;
+    }
+
+    .design-collection-info p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .design-collection-img a{
+        animation-name: scrolling-icon;
+        animation-timeline: view();
+        animation-range: 10% 100%;
+    }
+
+    @keyframes scrolling-icon{
+        0%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(200px);
+        }
+    }
 }
+
+
 
 /*Here ends responsive design breakpoint max-width 600px*/
 

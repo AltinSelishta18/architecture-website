@@ -705,6 +705,9 @@ nav{
     .Achievements{
         width: 90%;
         margin: auto;
+        min-height: auto;
+        height: auto;
+        padding-bottom: 40px;
     }
 
     .achievements-header h2{
@@ -715,6 +718,7 @@ nav{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
+        height: auto;
         gap: 10px;
     }
 
@@ -724,11 +728,13 @@ nav{
 
     .box{
         width: 100%;
+        position: relative;
     }
 
     #third-box{
         grid-column: 1 / -1;
         height: 100%;
+        position: relative;
     }
 
     .overlay{
@@ -745,9 +751,9 @@ nav{
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
-        min-height: 100vh;
-        margin-top: 5%;
+        min-height: 70vh;
         gap: 35px;
+        background-color: red;
     }
 
     .design-collection-img{

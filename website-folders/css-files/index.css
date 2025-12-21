@@ -734,7 +734,6 @@ nav{
     #third-box{
         grid-column: 1 / -1;
         height: 100%;
-        position: relative;
     }
 
     .overlay{
@@ -753,7 +752,6 @@ nav{
         flex-direction: column-reverse;
         min-height: 70vh;
         gap: 35px;
-        background-color: red;
     }
 
     .design-collection-img{
@@ -876,6 +874,9 @@ nav{
     .Achievements{
         width: 90%;
         margin: auto;
+        min-height: auto;
+        height: auto;
+        padding: 20px;
     }
 
     .achievements-header h2{
@@ -885,6 +886,7 @@ nav{
     .achievements-cards{
         display: grid;
         place-items: center;
+        height: auto;
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
     }
@@ -909,6 +911,52 @@ nav{
 
     .achievements-cards p{
         opacity: 1;
+    }
+
+    .designs-collection{
+        width: 100%;
+        display: flex;
+        min-height: 80vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 35px;
+    }
+
+    .design-collection-img{
+        width: 95%;
+    }
+
+    .design-collection-left{
+        width: 100%;
+    }
+
+    .design-collection-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .design-collection-info p{
+        width: 70%;
+        text-align: center;
+    }
+
+    .design-collection-info a{
+        animation: scrolling-icon;
+        animation-timeline: view();
+        animation-range: 10% 100%;
+    }
+
+    @keyframes scrolling-icon{
+        0%{
+            transform: translateY(0px);
+        }
+
+        100%{
+            transform: translateY(200px);
+        }
     }
 }
 

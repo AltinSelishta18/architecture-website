@@ -756,6 +756,23 @@ nav{
 
     .design-collection-img{
         width: 100%;
+        position: relative;
+    }
+
+    .designs-collection .design-collection-img a{
+        animation-name: scrolling-icon;
+        animation-timeline: view();
+        animation-range: 10% 100%;
+    }
+
+    @keyframes scrolling-icon{
+        0%{
+            transform: translateY(0px);
+        }
+        
+        100%{
+            transform: translateY(clamp(100px, 200px, 300px));
+        }
     }
 
     .design-collection-left{
@@ -779,21 +796,6 @@ nav{
     .design-collection-info p{
         width: 100%;
         text-align: center;
-    }
-
-    .design-collection-img a{
-        animation-name: scrolling-icon;
-        animation-timeline: view();
-        animation-range: 10% 100%;
-    }
-
-    @keyframes scrolling-icon{
-        0%{
-            transform: translateY(0px);
-        }
-        100%{
-            transform: translateY(200px);
-        }
     }
 }
 
@@ -990,5 +992,20 @@ nav{
         height: 90%;
     }
 
+    .design-collection-img{
+        width: 50%;
+    }
+
+    .design-collection-info{
+        width: 50%;
+    }
+    
+    .design-collection-info h2{
+        width: 100%;
+    }
+
+    .design-collection-info p{
+        width: 100%;
+    }
 }
 
